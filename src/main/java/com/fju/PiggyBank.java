@@ -6,7 +6,7 @@ import java.util.Scanner;
 
     public class PiggyBank {
         int total;
-        File datapiggy = new File("piggy.txt");
+        //File datapiggy = new File("data.txt");
         int ones;
         int fives;
         int tens;
@@ -46,7 +46,6 @@ import java.util.Scanner;
         }
         public void setTotal(int total){
         this.total = total;
-
         try {
             FileWriter fileWriter=new FileWriter("datapiggy");
             fileWriter.write(this.total+"\n");
